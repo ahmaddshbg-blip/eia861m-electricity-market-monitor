@@ -43,10 +43,10 @@ The current configuration expects 24,480 rows, 120 months, 51 jurisdictions, and
 | Check | Status |
 |---|---|
 | SQL shortlist matches the reviewed December 2025 brief | Passed locally and in the author's Colab/Drive run |
-| Unit tests | 12 passed locally and in the author's Colab/Drive run without warnings |
+| Unit tests | 12 passed locally, in the author's Colab/Drive run, and in GitHub Actions without warnings |
 | Fresh installation and EIA download in an empty project copy | Not yet tested |
 | Historical snapshot available to an external reviewer | Included with attribution and SHA-256 manifest; local clean-clone verification passed |
-| Fresh dependency installation | Pending the first GitHub Actions run |
+| Fresh dependency installation | Passed in GitHub Actions on Ubuntu with Python 3.12 at commit `a97e4df` |
 | Public deployment | Not done; local Streamlit dashboard only |
 
-The local clean-clone test used the already-tested Python environment, so it proves repository completeness but not dependency installation from zero. Do not describe Project 01 as fully reproducible until the GitHub Actions installation and checks pass. The project's decision support is descriptive; forecasting and Power BI are outside the current implementation.
+The historical-snapshot path is reproducible from the public repository: the local clean clone and GitHub Actions both passed. A fresh API download remains a separate, revision-sensitive path and has not been tested in GitHub Actions because it requires a private key. The project's decision support is descriptive; forecasting and Power BI are outside the current implementation.
