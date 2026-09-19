@@ -1,0 +1,105 @@
+{
+  "endpoint": "https://api.eia.gov/v2/electricity/retail-sales/data/",
+  "frequency": "monthly",
+  "data_fields": [
+    "customers",
+    "price",
+    "revenue",
+    "sales"
+  ],
+  "sectors": [
+    "COM",
+    "IND",
+    "RES",
+    "TRA"
+  ],
+  "states": [
+    "AL",
+    "AK",
+    "AZ",
+    "AR",
+    "CA",
+    "CO",
+    "CT",
+    "DE",
+    "DC",
+    "FL",
+    "GA",
+    "HI",
+    "ID",
+    "IL",
+    "IN",
+    "IA",
+    "KS",
+    "KY",
+    "LA",
+    "ME",
+    "MD",
+    "MA",
+    "MI",
+    "MN",
+    "MS",
+    "MO",
+    "MT",
+    "NE",
+    "NV",
+    "NH",
+    "NJ",
+    "NM",
+    "NY",
+    "NC",
+    "ND",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VT",
+    "VA",
+    "WA",
+    "WV",
+    "WI",
+    "WY"
+  ],
+  "start_period": "2016-01",
+  "end_period": "2025-12",
+  "request_windows": [
+    {
+      "start": "2016-01",
+      "end": "2017-12",
+      "rows_fetched": 4896,
+      "api_total": 4896
+    },
+    {
+      "start": "2018-01",
+      "end": "2019-12",
+      "rows_fetched": 4896,
+      "api_total": 4896
+    },
+    {
+      "start": "2020-01",
+      "end": "2021-12",
+      "rows_fetched": 4896,
+      "api_total": 4896
+    },
+    {
+      "start": "2022-01",
+      "end": "2023-12",
+      "rows_fetched": 4896,
+      "api_total": 4896
+    },
+    {
+      "start": "2024-01",
+      "end": "2025-12",
+      "rows_fetched": 4896,
+      "api_total": 4896
+    }
+  ],
+  "rows_fetched": 24480,
+  "acquired_at_utc": "2026-09-16T14:53:58.789628+00:00"
+}

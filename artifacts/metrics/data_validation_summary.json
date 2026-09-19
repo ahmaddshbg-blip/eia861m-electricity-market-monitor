@@ -1,0 +1,53 @@
+{
+  "row_count": 24480,
+  "column_count": 13,
+  "unique_months": 120,
+  "unique_states": 51,
+  "unique_sectors": 4,
+  "duplicate_key_count": 0,
+  "missing_counts": {
+    "period": 0,
+    "stateid": 0,
+    "stateDescription": 0,
+    "sectorid": 0,
+    "sectorName": 0,
+    "customers": 0,
+    "price": 0,
+    "revenue": 0,
+    "sales": 0,
+    "customers-units": 0,
+    "price-units": 0,
+    "revenue-units": 0,
+    "sales-units": 0
+  },
+  "zero_counts": {
+    "customers": 2642,
+    "price": 2646,
+    "revenue": 2645,
+    "sales": 2642
+  },
+  "negative_counts": {
+    "customers": 0,
+    "price": 0,
+    "revenue": 1,
+    "sales": 0
+  },
+  "rows_per_state_distribution": {
+    "480": 51
+  },
+  "rows_per_sector": {
+    "COM": 6120,
+    "IND": 6120,
+    "RES": 6120,
+    "TRA": 6120
+  },
+  "rows_per_period_distribution": {
+    "204": 120
+  },
+  "expected": {
+    "rows": 24480,
+    "months": 120,
+    "states": 51,
+    "sectors": 4
+  }
+}

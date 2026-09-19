@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Environments and secrets
+.env
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Project data and generated artifacts
+data/raw/*
+data/interim/*
+data/processed/*
+artifacts/models/*
+artifacts/metrics/*
+artifacts/metadata/*
+reports/figures/*
+
+# Versioned Project 01 snapshot and traceability artifacts
+!data/raw/eia861m_retail_sales_2016_2025.csv
+!data/interim/eia861m_retail_sales_2016_2025_with_quality_flags.csv
+!artifacts/metadata/eia861m_acquisition_metadata.json
+!artifacts/metadata/snapshot_checksums.sha256
+!artifacts/metrics/data_validation_summary.json
+
+# Keep directory placeholders if they are intentionally added later
+!.gitkeep
+
+# OS/editor files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,33 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Verify versioned snapshot
+        run: python scripts/verify_snapshot.py
+      - name: Rebuild validation outputs
+        run: python scripts/validate_data.py
+      - name: Confirm deterministic validation artifacts
+        run: git diff --exit-code -- data/interim/eia861m_retail_sales_2016_2025_with_quality_flags.csv artifacts/metrics/data_validation_summary.json
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Reproduce December 2025 SQL shortlist
+        run: python scripts/run_sql_investigation.py --period 2025-12
