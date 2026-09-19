@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "EIA-861M Electricity Market Monitor"
+type: software
+authors:
+  - family-names: "Sihombing"
+    given-names: "Ahmad Fani"
+version: 1.0.0
+date-released: "2026-09-19"
+license: MIT
+repository-code: "https://github.com/ahmaddshbg-blip/eia861m-electricity-market-monitor"
+url: "https://eia861m-market-monitor.streamlit.app/"
+abstract: >-
+  A reproducible decision-intelligence portfolio project for prioritizing
+  monthly U.S. electricity retail market investigations using published
+  EIA-861M state-sector sales, nominal revenue, customer, and implied-price
+  indicators for 2016-2025.
+keywords:
+  - data science
+  - business analytics
+  - decision intelligence
+  - electricity markets
+  - EIA-861M
+  - Python
+  - SQL
+  - Streamlit
