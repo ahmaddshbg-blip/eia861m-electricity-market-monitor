@@ -10,6 +10,21 @@ The approved Project 01 objective is to help a hypothetical energy-market analys
 
 The local dashboard now opens on a selected-month investigation table. An analyst can compare a state-sector with the same month one year earlier, sort by a chosen change metric, inspect its history, and export selected rows for follow-up. This is an analyst-controlled shortlist, not an anomaly score or a validated business outcome. See the [December 2025 investigation brief](reports/market_investigation_2025_12.md) for one reproducible decision example. Forecasting is out of scope for Project 01 and is the core focus of Portfolio Project 02.
 
+## Decision output
+
+![Monthly investigation dashboard showing December 2025 state-sector priorities](reports/figures/02_dashboard_monthly_investigation.png)
+
+The reviewed December 2025 workflow compares all 204 state-sector observations with the same month one year earlier. Ranking by absolute sales change directs analyst attention to CA residential, TX residential, and OH commercial. It does not classify these rows as anomalies or explain why they changed.
+
+## Key results
+
+- Published 2025 retail sales totaled 4,058.01 TWh, nominal revenue totaled USD 553.28 billion, and implied average price was 13.63 nominal cents/kWh.
+- From 2016 to 2025, published sales increased 7.9%, while nominal revenue increased 43.1% and implied average price increased 32.7%. No inflation adjustment or causal interpretation is applied.
+- In December 2025, national sales were 2.9% above December 2024 and nominal revenue was 10.2% higher.
+- CA residential recorded the largest absolute decline in the monthly shortlist; TX residential and OH commercial recorded the largest increases. OH commercial also exceeded its prior observed December YoY range, making it a strong follow-up candidate rather than a confirmed anomaly.
+
+![National annual sales, nominal revenue, and implied average price trends](reports/figures/01_national_annual_trends.png)
+
 ## Reproduce the data
 
 The repository includes the reviewed raw and flagged snapshots that support the December 2025 brief. Install the pinned direct dependencies and verify the files:

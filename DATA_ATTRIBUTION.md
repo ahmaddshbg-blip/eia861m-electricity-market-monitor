@@ -30,4 +30,4 @@ Acquisition metadata, validation metrics, and SHA-256 checksums accompany the sn
 
 ## Code License
 
-The license for repository code will be stated separately in `LICENSE`. Public-domain status of EIA data does not automatically determine the license of the project's original code and documentation.
+Repository code and documentation are released under the [MIT License](LICENSE). Public-domain status of EIA data does not determine the license of the project's original code and documentation.

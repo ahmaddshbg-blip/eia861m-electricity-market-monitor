@@ -29,6 +29,8 @@ reports/figures/*
 !artifacts/metadata/eia861m_acquisition_metadata.json
 !artifacts/metadata/snapshot_checksums.sha256
 !artifacts/metrics/data_validation_summary.json
+!reports/figures/01_national_annual_trends.png
+!reports/figures/02_dashboard_monthly_investigation.png
 
 # Keep directory placeholders if they are intentionally added later
 !.gitkeep
