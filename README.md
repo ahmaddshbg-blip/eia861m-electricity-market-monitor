@@ -4,11 +4,13 @@
 
 Portfolio project using published EIA-861M monthly state-sector retail electricity sales for 2016-2025. The dashboard supports descriptive market monitoring. It does not forecast demand or establish causal explanations.
 
+**[Open the public Streamlit dashboard](https://eia861m-market-monitor.streamlit.app/)**
+
 ## Business problem
 
 The approved Project 01 objective is to help a hypothetical energy-market analyst decide which state-sector observations deserve deeper investigation each month because sales, nominal revenue, customer counts, or implied average price changed conspicuously. The supported decision is where to focus analyst attention, not a company-specific tariff, investment, or policy action. See the [dashboard specification](docs/dashboard_spec.md) for the decision, scope, and success criterion.
 
-The local dashboard now opens on a selected-month investigation table. An analyst can compare a state-sector with the same month one year earlier, sort by a chosen change metric, inspect its history, and export selected rows for follow-up. This is an analyst-controlled shortlist, not an anomaly score or a validated business outcome. See the [December 2025 investigation brief](reports/market_investigation_2025_12.md) for one reproducible decision example. Forecasting is out of scope for Project 01 and is the core focus of Portfolio Project 02.
+The dashboard opens on a selected-month investigation table. An analyst can compare a state-sector with the same month one year earlier, sort by a chosen change metric, inspect its history, and export selected rows for follow-up. This is an analyst-controlled shortlist, not an anomaly score or a validated business outcome. See the [December 2025 investigation brief](reports/market_investigation_2025_12.md) for one reproducible decision example. Forecasting is out of scope for Project 01 and is the core focus of Portfolio Project 02.
 
 ## Decision output
 
@@ -47,7 +49,7 @@ $env:EIA861M_DATA_PATH = 'D:\path\to\eia861m_retail_sales_2016_2025_with_quality
 python -m streamlit run app.py
 ```
 
-Streamlit prints a local URL (normally `http://localhost:8501`). This is not a public deployment.
+Streamlit prints a local URL (normally `http://localhost:8501`). For the hosted version, open the [public dashboard](https://eia861m-market-monitor.streamlit.app/).
 
 The global year selector starts at the latest year in the CSV. The Monthly investigation view defaults to its latest month. National totals do not change when state or sector filters are used in Segment explorer. The annual state-sector table's CSV download contains its displayed filter scope and explicit sort order; the monthly export contains analyst-selected rows.
 
@@ -65,7 +67,7 @@ The default top three should match the [December 2025 investigation brief](repor
 
 Sales and revenue are annual sums; the customer indicator is the average of monthly customer counts. Implied price is `100 * sum(revenue) / sum(sales)` in nominal cents/kWh, not a tariff or a mean of reported prices. Zeros and the small negative revenue observation are retained and flagged. See `docs/data_provenance.md`, `docs/data_quality.md`, and `docs/eda_findings.md` for source, quality, and interpretation details.
 
-This local MVP uses a fixed 2016-2025 snapshot, not an automated monthly refresh. The dashboard is not publicly deployed. The monthly view has passed code and data checks and user visual review. Forecasting and Power BI are not implemented in Project 01 and must not be inferred from the Streamlit dashboard.
+This deployed MVP uses a fixed 2016-2025 snapshot, not an automated monthly refresh. The monthly view has passed code and data checks and user visual review. Forecasting and Power BI are not implemented in Project 01 and must not be inferred from the Streamlit dashboard.
 
 ## License
 
